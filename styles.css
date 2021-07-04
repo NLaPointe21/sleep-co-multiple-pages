@@ -5,36 +5,24 @@
 }
 
 /* ----------------------Universal Syles + Utility Classes----------------------*/
-body {
-  color: #192b37;
-  font-family: "Catamaran", sans-serif;
-}
-
 /* Padding + Margin--------------*/
+.padded-sm {padding: 2.5%;}
 .padded {padding: 5%;}
-.padded-sm {padding: 1rem;}
 .padded-lg {padding: 10%;}
 
-/* Backgrounds + Images----------*/
-.bg-image {
-  min-height: 10vh;
-  background-color: rgb(200,200,200);
-}
-.bg-dark {
-  background-color: #192b37;
-  color: #ffffff;
-}
-.bg-featured{
-  background-color:#f4b525;
-}
-.bg-light{
-  background-color:#e3ecf2;
-}
-
+/* Minimum Height----------------*/
 .tall-70 {min-height: 70vh;}
 .tall-80 {min-height: 80vh;}
 .tall-90 {min-height: 90vh;}
 .tall-100 {min-height: 100vh;}
+
+/* Backgrounds + Images----------*/
+.bg-image { 
+  background-color: rgb(200,200,200);
+  background-size:cover;
+  background-repeat:no-repeat;
+  min-height: 10rem;
+}
 
 .landscape     { padding-bottom: 66%; }
 .landscape-wide{ padding-bottom: 56%;  }
@@ -42,21 +30,25 @@ body {
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
 
-/* Typogorgaphy ------------------*/
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+.bg-dark {
+  background-color: #192b37;
+  color: #ffffff;
 }
+.bg-featured{ background-color:#f4b525; }
+.bg-light{ background-color:#e3ecf2; }
 
-h3 {
-  line-height: 1;
+/* Typogorgaphy ------------------*/
+body {
+  color: #192b37;
+  font-family: "Catamaran", sans-serif;
 }
 
 h2, h3, h4, h5, h6{
   margin-bottom: 1rem;
   line-height: 1.1;
 }
+
+h2 { font-size: 2.5rem;}
 
 
 p {
@@ -72,6 +64,11 @@ p:last-child {
 a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+a:hover{
+  color: #ffbe00;
 }
 
 .text-center {text-align: center;}
@@ -97,19 +94,20 @@ a {
   color: rgb(120, 120, 125);
 }
 
-.quote-icon {
-  color: rgb(120, 120, 125);
-  display: inline-block;
-  font-size: 6rem;
-  line-height: 1;
+/* Font Awesome Icons-------------*/
+.fas {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-
-/* ----------------------Heading----------------------------------------------- */
+/* ----------------------Header + Footer -------------------------------------- */
 header {
   background-image: url("https://source.unsplash.com/oPJveyQEjKY");
   background-size: cover;
   background-position: center;
+  padding: 2% 5%;
 }
 
 header h3 {
@@ -117,11 +115,20 @@ header h3 {
   line-height: 1;
 }
 
-.header-nav a:hover{
-  color:#f4b525;
+nav a{
+  padding: 0.5rem;
+  display:inline-block;
+  border:none;
 }
 
-/* ----------------------Gallery Section--------------------------------------*/
+.logo h2{margin-bottom:0;}
+
+/* Footer-------------------------*/
+footer a {
+  border: none;
+}
+
+/* ----------------------Home Page Image + Text Section---------------------*/
 .bg-bed {
   background-image: url("https://source.unsplash.com/uocSnWMhnAs");
   background-size: cover;
@@ -134,27 +141,51 @@ header h3 {
   background-position: 50% 35%;
 }
 
-/* ----------------------Feautures (Icon) Section----------------------------*/
-.fas {
-  display: block;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* ----------------------Banner Section--------------------------------------*/
+/* ----------------------Home Page Banner Section----------------------------*/
 .bg-pillow {
   background-image: url("https://source.unsplash.com/gRZmKaFUpBM");
   background-size: cover;
   background-position: 50% 57%;
 }
 
-
-/* ----------------------Footer------------------------------- */
-footer a {
-  border: none;
+/* ----------------------Buttons + Forms-------------------------------------*/
+/* Contact Form-------------------*/
+input,
+textarea{
+  width:100%;
+  display:block;
+  margin-bottom:0.3rem;
+  font-family:inherit;
+  padding:0.5rem;
+  font-size: 0.9rem;
+  border:2px solid transparetn;
+  border-radius: 3px;
 }
 
-footer a:hover {
-  color: #ffbe00;
+input:focus, 
+textarea:focus{
+  border: 2px solid #ffbe00;
+  outline:none;
+}
+
+.button{
+  width:50%;
+  display:inline-block;
+  text-align:center;
+  padding:0.5rem;
+  border:none;
+  border-radius: 3px;
+  background-color: #ffbe00;
+}
+
+.button:hover{
+  background-color: white;
+}
+
+/* ----------------------Testimonials----------------------------------------*/
+.quote-icon {
+  color: rgb(120, 120, 125);
+  display: inline-block;
+  font-size: 6rem;
+  line-height: 1;
 }
