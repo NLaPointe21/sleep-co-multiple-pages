@@ -4,58 +4,45 @@
   box-sizing: border-box;
 }
 
-/* ----------------------Universal syles + utility classes -------*/
+/* ----------------------Universal Syles + Utility Classes----------------------*/
 body {
   color: #192b37;
   font-family: "Catamaran", sans-serif;
 }
 
+/* Padding + Margin--------------*/
+.padded {padding: 5%;}
+.padded-sm {padding: 1rem;}
+.padded-lg {padding: 10%;}
+
+/* Backgrounds + Images----------*/
 .bg-image {
   min-height: 10vh;
+  background-color: rgb(200,200,200);
 }
-
-.padded {
-  padding: 5%;
-}
-
-.padded-sm {
-  padding: 1rem;
-}
-
-.padded-lg {
-  padding: 10%;
-}
-
 .bg-dark {
   background-color: #192b37;
   color: #ffffff;
 }
-
-.text-center {
-  text-align: center;
+.bg-featured{
+  background-color:#f4b525;
+}
+.bg-light{
+  background-color:#e3ecf2;
 }
 
-.text-right {
-  text-align: right;
-}
+.tall-70 {min-height: 70vh;}
+.tall-80 {min-height: 80vh;}
+.tall-90 {min-height: 90vh;}
+.tall-100 {min-height: 100vh;}
 
-.tall-70 {
-  min-height: 70vh;
-}
+.landscape     { padding-bottom: 66%; }
+.landscape-wide{ padding-bottom: 56%;  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 125%; }
+.square        { padding-bottom: 100%; }
 
-.tall-80 {
-  min-height: 80vh;
-}
-
-.tall-90 {
-  min-height: 90vh;
-}
-
-.tall-100 {
-  min-height: 100vh;
-}
-
-/* ----------------------Typogorgaphy styles --------------------*/
+/* Typogorgaphy ------------------*/
 h2 {
   font-size: 2.5rem;
   line-height: 1.1;
@@ -65,6 +52,12 @@ h2 {
 h3 {
   line-height: 1;
 }
+
+h2, h3, h4, h5, h6{
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
 
 p {
   font-weight: 200;
@@ -79,29 +72,25 @@ p:last-child {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid;
 }
 
-.featured-text {
-  color: #ffbe00;
-}
+.text-center {text-align: center;}
+.text-left {text-align:left;}
+.text-right {text-align: right;}
 
-.featured-text-white {
-  color: #ffffff;
-}
-
-.small-text {
-  font-size: 1.5rem;
-}
-
+.big-text {font-size: 5rem;}
+.small-text {font-size: 1.5rem;}
 .medium-text {
   font-size: 2rem;
   line-height: 1.5;
 }
 
-.big-text {
-  font-size: 5rem;
-}
+.font-weight-light {font-weight: 200;}
+.font-weight-normal {font-weight: normal; /*Generally 400 is normal*/}
+.font-weight-extra-bold {font-weight: 800;}
+
+.featured-text {color: #ffbe00;}
+.featured-text-white {color: #ffffff;}
 
 .subtitle {
   font-size: 1.2rem;
@@ -115,20 +104,8 @@ a {
   line-height: 1;
 }
 
-.font-weight-light {
-  font-weight: 200;
-}
 
-.font-weight-normal {
-  font-weight: normal; /*Generally 400 is normal*/
-}
-
-.font-weight-extra-bold {
-  font-weight: 800;
-}
-
-/* ----------------------Header--------------------------------- */
-/* oPJveyQEjKY */
+/* ----------------------Heading----------------------------------------------- */
 header {
   background-image: url("https://source.unsplash.com/oPJveyQEjKY");
   background-size: cover;
@@ -140,8 +117,11 @@ header h3 {
   line-height: 1;
 }
 
-/* ----------------------Gallery Section---------------------- */
+.header-nav a:hover{
+  color:#f4b525;
+}
 
+/* ----------------------Gallery Section--------------------------------------*/
 .bg-bed {
   background-image: url("https://source.unsplash.com/uocSnWMhnAs");
   background-size: cover;
@@ -154,7 +134,7 @@ header h3 {
   background-position: 50% 35%;
 }
 
-/* ----------------------Feautures Section-------------------- */
+/* ----------------------Feautures (Icon) Section----------------------------*/
 .fas {
   display: block;
   font-size: 3rem;
@@ -162,12 +142,13 @@ header h3 {
   text-align: center;
 }
 
-/* ----------------------Banner Section----------------------- */
+/* ----------------------Banner Section--------------------------------------*/
 .bg-pillow {
   background-image: url("https://source.unsplash.com/gRZmKaFUpBM");
   background-size: cover;
   background-position: 50% 57%;
 }
+
 
 /* ----------------------Footer------------------------------- */
 footer a {
