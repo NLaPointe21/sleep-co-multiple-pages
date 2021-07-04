@@ -21,7 +21,6 @@
   background-color: rgb(200,200,200);
   background-size:cover;
   background-repeat:no-repeat;
-  min-height: 10rem;
 }
 
 .landscape     { padding-bottom: 66%; }
@@ -49,6 +48,7 @@ h2, h3, h4, h5, h6{
 }
 
 h2 { font-size: 2.5rem;}
+h3{font-size: 1.5rem;}
 
 
 p {
@@ -102,6 +102,11 @@ a:hover{
   text-align: center;
 }
 
+.fab{
+  display:block;
+  font-size:3rem;
+}
+
 /* ----------------------Header + Footer -------------------------------------- */
 header {
   background-image: url("https://source.unsplash.com/oPJveyQEjKY");
@@ -115,6 +120,7 @@ header h3 {
   line-height: 1;
 }
 
+
 nav a{
   padding: 0.5rem;
   display:inline-block;
@@ -124,8 +130,15 @@ nav a{
 .logo h2{margin-bottom:0;}
 
 /* Footer-------------------------*/
+footer{padding: 10% 25%;}
+
 footer a {
   border: none;
+}
+
+footer h3{
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 /* ----------------------Home Page Image + Text Section---------------------*/
@@ -168,18 +181,40 @@ textarea:focus{
   outline:none;
 }
 
-.button{
+.contact-button{
   width:50%;
   display:inline-block;
   text-align:center;
-  padding:0.5rem;
+  padding:0.7rem;
   border:none;
   border-radius: 3px;
   background-color: #ffbe00;
 }
 
-.button:hover{
+.contact-button:hover{
   background-color: white;
+}
+
+.button{
+  display:inline-block;
+  background-color: #192b37;
+  color:white;
+  padding: 0.7rem 5rem;
+  margin-top: 1rem;
+  font-family:inherit;
+  text-transform:uppercase;
+  border-radius: 5px;
+  border:transparent;
+}
+
+.button:hover{
+  background-color: #ffbe00;
+  color: #192b37;
+}
+
+/* ----------------------Card Section----------------------------------------*/
+.card{
+  border:4px solid #ffbe00;
 }
 
 /* ----------------------Testimonials----------------------------------------*/
