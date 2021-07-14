@@ -7,6 +7,7 @@
 [class*=grid-], [class*=grid_], [class~=grid]{
   margin:0;
 }
+
 /* ----------------------Universal Syles + Utility Classes----------------------*/
 /* Padding + Margin--------------*/
 .padded-sm {padding: 2.5%;}
@@ -146,6 +147,41 @@ footer h3{
   font-size: 2rem;
 }
 
+/* Mobile Menu------------------- */
+.mobile-menu{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  max-height: 100vh;
+  z-index:1;
+}
+
+.mobile-menu a{
+  display:block;
+  font-size:1.5rem;
+  padding:0.5rem;
+}
+
+.hamburger-button{
+  position:relative;
+  z-index:2;
+  cursor:pointer;
+}
+
+.hamburger-button.active{
+  color:white;
+  position:fixed;
+  top:2%;
+  right:6%;
+}
+
+.hamburger-button i{
+  font-size:2.2rem;
+  margin-bottom:0;
+}
+
 /* ----------------------Home Page Image + Text Section---------------------*/
 .bg-bed {
   background-image: url("https://source.unsplash.com/uocSnWMhnAs");
@@ -233,7 +269,8 @@ textarea:focus{
 /* ----------------------Media Query-----------------------------------------*/
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 
