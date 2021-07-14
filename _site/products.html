@@ -1,10 +1,50 @@
----
-layout: default
----
-    <!---------------------- Header ------------------------------>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Viewport Meta for Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Gridlex -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"
+    />
+
+    <!-- Google font - Catamaran -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+        <!---------------------- Header ------------------------------>
     <header class="grid tall-60">
       
-      {% include header-nav.html %}
+       <div class="header-nav col-12-top grid">
+        <div class="col-5_xs-12-middle sm-padded-b-0">
+          <a href="/index.html" class="logo text-left  sm-text-center">
+            <h2>The Sleep Co</h2>
+          </a>
+        </div>
+        <nav class="col-7_xs-12-middle text-right sm-text-center">
+          <a href="/about.html">About</a>
+          <a href="/products.html">Products</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
 
       <div class="col-12-middle text-center">
         <h3 class="font-weight-extra-bold"><span class="featured-text">addictively </span>soft</h3>
@@ -150,3 +190,18 @@ layout: default
         <!-- add img -->
       </div>
     </section>
+
+
+    <!---------------------- Footer ---------------------->
+    <footer class="bg-dark text-center">
+      <h3>The Sleep Co</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus doloribus cum cupiditate accusantium, eveniet asperiores enim accusamu. sit obcaecati quas sequi, laudantium ad fugit.</p>
+      <nav>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>        
+      </nav>
+    </footer>
+  </body>
+</html>
+ 
