@@ -1,5 +1,26 @@
 ---
 layout: default
+features: 
+  - icon: fas fa-cloud
+    description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptatibus provident consectetur non, doloremque ut expedita nisi
+          sed, vel quaerat sapiente velit maxime illum obcaecati, dignissimos
+          nobis nemo earum
+  - icon: fas fa-feather
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptatibus provident consectetur non, doloremque ut expedita nisi
+          sed, vel quaerat sapiente velit maxime illum obcaecati, dignissimos
+          nobis nemo earum
+  - icon: fas fa-cloud
+    description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptatibus provident consectetur non, doloremque ut expedita nisi
+          sed, vel quaerat sapiente velit maxime illum obcaecati, dignissimos
+          nobis nemo earum
+  - icon: fas fa-feather
+    description:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          voluptatibus provident consectetur non, doloremque ut expedita nisi
+          sed, vel quaerat sapiente velit maxime illum obcaecati, dignissimos
+          nobis nemo earum
 ---
     
     <!---------------------- Header banner ---------------------->
@@ -44,46 +65,19 @@ layout: default
     </section>
 
     <!---------------------- Features section ------------------->
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
       <div class="padded-sm col-12 text-center">
         <h2><span class="featured-text">features</span> you will love</h2>
       </div>
+
+      {% for item in page.features %}
       <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
+        <i class="{{item.icon}}"></i>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          voluptatibus provident consectetur non, doloremque ut expedita nisi
-          sed, vel quaerat sapiente velit maxime illum obcaecati, dignissimos
-          nobis nemo earum
+         {{item.description}}
         </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem
-          dicta commodi excepturi voluptatum. Animi aspernatur assumenda,
-          tempora iure hic nam facere expedita minus omnis sed vero quae
-          voluptate
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-          inventore mollitia ducimus sit obcaecati quas sequi, laudantium ad
-          fugit consequuntur, nesciunt, eos iusto deleniti magni libero
-          repudiandae numquam iste harum.
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack">
-        <i class="fas fa-cloud"></i>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-          similique facere mollitia deserunt? Odio laborum incidunt deserunt
-          placeat quidem assumenda minima ea totam repellendus quia eius, qui
-          quas quasi ducimus.
-        </p>
-      </div>
+      </div>      
+      {% endfor %}
     </section>
 
     <!---------------------- Banner ---------------------->

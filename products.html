@@ -1,5 +1,24 @@
 ---
 layout: default
+cards:
+  - heading: little heading
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                similique facere mollitia deserunt? Odio laborum incidunt deserunt
+                placeat quidem assumenda minima ea totam repellendus quia eius, qui
+                quas quasi ducimus.
+    featured_image: https://source.unsplash.com/gRZmKaFUpBM
+  - heading: little heading
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                similique facere mollitia deserunt? Odio laborum incidunt deserunt
+                placeat quidem assumenda minima ea totam repellendus quia eius, qui
+                quas quasi ducimus.
+    featured_image: https://source.unsplash.com/gRZmKaFUpBM
+  - heading: little heading
+    description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                similique facere mollitia deserunt? Odio laborum incidunt deserunt
+                placeat quidem assumenda minima ea totam repellendus quia eius, qui
+                quas quasi ducimus.
+    featured_image: https://source.unsplash.com/gRZmKaFUpBM
 ---
     <!---------------------- Header ------------------------------>
     <header class="grid tall-60">
@@ -57,42 +76,18 @@ layout: default
 
     <!---------------------- Cards section ------------------------>
     <section class="grid padded">
+      {% for item in page.cards %}
       <div class="col-4_sm-12 padded-sm">
         <div class="card">
-          <div class="bg-image portrait"></div>
+          <div class="bg-image portrait" style='background-image: url("{{item.featured_image}}");'></div>
             <div class="padded-lg">
-              <h3>little heading</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-                similique facere mollitia deserunt? Odio laborum incidunt deserunt
-                placeat quidem assumenda minima ea totam repellendus quia eius, qui
-                quas quasi ducimus.</p>
+              <h3>{{item.heading}}</h3>
+              <p>{{item.description}}</p>
             </div>
           </div>
         </div>
-      <div class="col-4_sm-12 padded-sm">
-          <div class="card">
-          <div class="bg-image portrait"></div>
-            <div class="padded-lg">
-              <h3>little heading</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-                similique facere mollitia deserunt? Odio laborum incidunt deserunt
-                placeat quidem assumenda minima ea totam repellendus quia eius, qui
-                quas quasi ducimus.</p>
-            </div>
-          </div>
       </div>
-      <div class="col-4_sm-12 padded-sm">
-          <div class="card">
-          <div class="bg-image portrait"></div>
-            <div class="padded-lg">
-              <h3>little heading</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-                similique facere mollitia deserunt? Odio laborum incidunt deserunt
-                placeat quidem assumenda minima ea totam repellendus quia eius, qui
-                quas quasi ducimus.</p>
-            </div>
-          </div>
-      </div>
+      {% endfor %}
     </section>
 
     <!---------------------- Image Banner ---------------------->
