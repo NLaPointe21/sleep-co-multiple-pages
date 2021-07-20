@@ -118,6 +118,8 @@ a:hover{
   font-size:3rem;
 }
 
+
+
 /* ----------------------Header + Footer -------------------------------------- */
 header {
   background-image: url("https://source.unsplash.com/oPJveyQEjKY");
@@ -269,6 +271,18 @@ textarea:focus{
   font-size: 6rem;
   line-height: 1;
 }
+
+/* ----------------------Gallery --------------------------------------------*/
+.gallery [class*="col-"]{padding:0.5%;}
+.gallery a{
+  border-bottom:none;
+}
+
+/* Pop-Up Background--------------*/
+.lg-backdrop{background-color: rgb(40,40,40);}
+.lg-backdrop.in{opacity: 0.8;}
+
+.lg-sub-html{background-color: black;}
 
 /* ----------------------Media Query-----------------------------------------*/
 .show-xs, 

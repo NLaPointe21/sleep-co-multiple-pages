@@ -33,7 +33,34 @@ gallery:
     </header>
 
 <!---------------------- Gallery ---------------------------->
+    <!-- 1) Pop Up Gallery -->
     <section class="padded">
+        <div class="gallery grid" id="lightgallery">
+
+            {% for item in page.gallery %}
+            <a class="{{item.column-size}}" href="{{item.background_image}}">
+                <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"></div>
+            </a> 
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- 2) Pup Up Gallery w/ Button -->
+    <!-- <section class="padded">
+        <div class="gallery grid" id="lightgallery-2">
+            <a class="button text-center" href="https://source.unsplash.com/gRZmKaFUpBM">
+               View our work
+            </a> 
+            <a href="https://source.unsplash.com/gRZmKaFUpBM" title="Bed"></a>
+            <a href="https://source.unsplash.com/gRZmKaFUpBM"></a>
+            <a href="https://source.unsplash.com/gRZmKaFUpBM"></a>
+            <a href="https://source.unsplash.com/gRZmKaFUpBM"></a>
+            <a href="https://source.unsplash.com/gRZmKaFUpBM"></a>
+        </div>
+    </section> -->
+
+    <!-- Standard Gallery  -->
+    <!-- <section class="padded">
         <div class="gallery grid">
 
             {% for item in page.gallery %}
@@ -42,4 +69,4 @@ gallery:
             </div> 
             {% endfor %}
         </div>
-    </section>
+    </section> -->
