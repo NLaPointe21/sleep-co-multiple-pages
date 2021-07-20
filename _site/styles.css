@@ -20,8 +20,6 @@
 .padded {padding: 5%;}
 .padded-lg {padding: 10%;}
 
-
-
 /* Minimum Height----------------*/
 .tall-70 {min-height: 70vh;}
 .tall-80 {min-height: 80vh;}
@@ -33,6 +31,7 @@
   background-color: rgb(200,200,200);
   background-size:cover;
   background-repeat:no-repeat;
+  background-position: center;
 }
 
 .landscape     { padding-bottom: 66%; }
