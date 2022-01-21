@@ -9,21 +9,21 @@ $( document ).ready(function() {
     AOS.init({
         duration: 500
     });
-});
 
-// 1) Pup Up Gallery
-lightGallery(document.getElementById('lightgallery'), {
+    // 1) Pup Up Gallery
+    lightGallery(document.getElementById('lightgallery'), {
         speed: 500,
         download: false
         
     });
 
-// 2) Pup Up Gallery w/ Button
-// lightGallery(document.getElementById('lightgallery-2'), {
-//         speed: 500,
-//         download: false,
+    // 2) Pup Up Gallery w/ Button
+    // lightGallery(document.getElementById('lightgallery-2'), {
+    //   speed: 500,
+    //   download: false,            
+    //});
+});
 
-        
-//     });
+
 
 
